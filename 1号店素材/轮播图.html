@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/meSlider.css"/>
+	</head>
+	<body>
+		<div id="slider" class="slider"></div>
+		
+		
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/sliderMe.js" ></script>
+		<script> 
+		$(function() {
+         $('#slider').sliders({
+        imgArr: ['images/ban1.jpg ','images/ban1.jpg ','images/ban1.jpg '],
+        autoLoop: true,
+        current: 1,
+        time: 1000, //切换间隔时间
+        vWidth: 770 //图片宽度
+    })
+});
+		</script>
+	</body>
+</html>
